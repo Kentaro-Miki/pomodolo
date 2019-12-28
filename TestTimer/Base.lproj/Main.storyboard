@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="PomodoloTimer" translatesAutoresizingMaskIntoConstraints="NO" id="iOV-h0-p7X">
+                                <rect key="frame" x="-1" y="0.0" width="415" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YyR-Ov-lmb">
+                                <rect key="frame" x="157" y="572" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="2cy-LN-g8r"/>
+                                    <constraint firstAttribute="height" constant="100" id="PHy-LV-Fj3"/>
+                                </constraints>
+                                <state key="normal" title="始める">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sW7-vZ-Lfu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yT6-Y3-ryc">
+                                <rect key="frame" x="157" y="572" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="YAG-yA-UHr"/>
+                                    <constraint firstAttribute="height" constant="100" id="dWH-o1-tgA"/>
+                                </constraints>
+                                <state key="normal" title="止める">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="stopTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mcS-Wt-Uxi"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="5:00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9bP-UW-9cB">
+                                <rect key="frame" x="142.5" y="402.5" width="129.5" height="91"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="66"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qWc-VT-MTc">
+                                <rect key="frame" x="90" y="572" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="7HY-GI-DKC"/>
+                                    <constraint firstAttribute="height" constant="100" id="Dhi-Yg-MZk"/>
+                                </constraints>
+                                <state key="normal" title="やり直す">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="resetTimer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ONP-aN-9DP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1t-2P-vEY">
+                                <rect key="frame" x="224" y="572" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="BlN-p3-TQp"/>
+                                    <constraint firstAttribute="width" constant="100" id="Yeh-tg-MQj"/>
+                                </constraints>
+                                <state key="normal" title="続ける">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="restartButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8CK-nL-Dmb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YyR-Ov-lmb" secondAttribute="bottom" constant="190" id="2SZ-Na-s3U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qWc-VT-MTc" secondAttribute="bottom" constant="190" id="AeW-c3-cTI"/>
+                            <constraint firstItem="YyR-Ov-lmb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ByE-bg-8Gq"/>
+                            <constraint firstItem="9bP-UW-9cB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GDz-6b-6YN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E1t-2P-vEY" secondAttribute="trailing" constant="90" id="QDj-vt-v75"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yT6-Y3-ryc" secondAttribute="bottom" constant="190" id="b5A-iv-m7s"/>
+                            <constraint firstItem="9bP-UW-9cB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jqT-El-gsq"/>
+                            <constraint firstItem="qWc-VT-MTc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="nxF-we-v62"/>
+                            <constraint firstItem="yT6-Y3-ryc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="op6-ON-fRv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="E1t-2P-vEY" secondAttribute="bottom" constant="190" id="pjP-Ae-8gu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ug4-Ja-WO0"/>
+                    <connections>
+                        <outlet property="resetButton" destination="qWc-VT-MTc" id="Fux-ax-2td"/>
+                        <outlet property="restartButton" destination="E1t-2P-vEY" id="UTB-zi-4H3"/>
+                        <outlet property="startButton" destination="YyR-Ov-lmb" id="8ek-hw-taq"/>
+                        <outlet property="stopButton" destination="yT6-Y3-ryc" id="WWE-yO-1Vs"/>
+                        <outlet property="textField" destination="9bP-UW-9cB" id="ea8-MF-Lle"/>
+                        <segue destination="gPJ-Ds-8EV" kind="show" identifier="moveSegue" id="4ys-hX-ijo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="129.91071428571428"/>
+        </scene>
+        <!--Rest View Controller-->
+        <scene sceneID="Aps-st-sUY">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="gPJ-Ds-8EV" customClass="RestViewController" customModule="TestTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fNN-rP-p0o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iPhone X-XS-11 Pro – 1" translatesAutoresizingMaskIntoConstraints="NO" id="9N2-0U-qfD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gv8-2p-ylK">
+                                <rect key="frame" x="157" y="572" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="2Kw-C3-Kjp"/>
+                                    <constraint firstAttribute="width" constant="100" id="xoa-w9-cLd"/>
+                                </constraints>
+                                <state key="normal" title="始める">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startRest:" destination="gPJ-Ds-8EV" eventType="touchUpInside" id="n0Q-S5-xLp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vOJ-Xo-aYL">
+                                <rect key="frame" x="157" y="572" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Iwp-yL-lZe"/>
+                                    <constraint firstAttribute="height" constant="100" id="YYz-2K-Kge"/>
+                                </constraints>
+                                <state key="normal" title="止める">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="StopRest:" destination="gPJ-Ds-8EV" eventType="touchUpInside" id="Sdn-NZ-AWJ"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="5:00" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xqO-dS-lUd">
+                                <rect key="frame" x="144.5" y="404" width="125.5" height="88"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="64"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NLK-wZ-F6S">
+                                <rect key="frame" x="224" y="572" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="cez-MO-LKR"/>
+                                    <constraint firstAttribute="height" constant="100" id="iua-iY-c1J"/>
+                                </constraints>
+                                <state key="normal" title="続ける">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="restartRest:" destination="gPJ-Ds-8EV" eventType="touchUpInside" id="c8t-lf-4zK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVw-Ad-c3O">
+                                <rect key="frame" x="20" y="44" width="53" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="◁">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="finishRest:" destination="gPJ-Ds-8EV" eventType="touchUpInside" id="Dgm-nl-Vyy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aS6-cH-9Pw">
+                                <rect key="frame" x="90" y="572" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="3gq-M5-yPC"/>
+                                    <constraint firstAttribute="height" constant="100" id="RhM-Pm-tKK"/>
+                                </constraints>
+                                <state key="normal" title="戻す">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="resetRest:" destination="gPJ-Ds-8EV" eventType="touchUpInside" id="dZG-oN-dMu"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xqO-dS-lUd" firstAttribute="centerX" secondItem="fNN-rP-p0o" secondAttribute="centerX" id="1JD-hb-Wd3"/>
+                            <constraint firstItem="rVw-Ad-c3O" firstAttribute="top" secondItem="gzR-g9-yNu" secondAttribute="top" id="1rO-y7-7n0"/>
+                            <constraint firstItem="aS6-cH-9Pw" firstAttribute="leading" secondItem="gzR-g9-yNu" secondAttribute="leading" constant="90" id="5CA-yk-Mt6"/>
+                            <constraint firstItem="xqO-dS-lUd" firstAttribute="centerY" secondItem="fNN-rP-p0o" secondAttribute="centerY" id="MJl-Cl-bJS"/>
+                            <constraint firstItem="rVw-Ad-c3O" firstAttribute="leading" secondItem="gzR-g9-yNu" secondAttribute="leading" constant="20" id="OHY-1O-lWI"/>
+                            <constraint firstItem="vOJ-Xo-aYL" firstAttribute="centerX" secondItem="fNN-rP-p0o" secondAttribute="centerX" id="USm-u6-RG7"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="gv8-2p-ylK" secondAttribute="bottom" constant="190" id="ZzA-3C-Dnv"/>
+                            <constraint firstItem="gzR-g9-yNu" firstAttribute="bottom" secondItem="NLK-wZ-F6S" secondAttribute="bottom" constant="190" id="c0H-EE-u2C"/>
+                            <constraint firstItem="gzR-g9-yNu" firstAttribute="trailing" secondItem="NLK-wZ-F6S" secondAttribute="trailing" constant="90" id="cS6-yw-VJO"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="aS6-cH-9Pw" secondAttribute="bottom" constant="190" id="hii-7k-PAV"/>
+                            <constraint firstItem="gzR-g9-yNu" firstAttribute="trailing" secondItem="rVw-Ad-c3O" secondAttribute="trailing" constant="341" id="mId-Mh-Uq0"/>
+                            <constraint firstItem="gzR-g9-yNu" firstAttribute="bottom" secondItem="vOJ-Xo-aYL" secondAttribute="bottom" constant="190" id="mYQ-1R-pcz"/>
+                            <constraint firstItem="gv8-2p-ylK" firstAttribute="centerX" secondItem="fNN-rP-p0o" secondAttribute="centerX" id="sYv-fB-wW7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gzR-g9-yNu"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MXc-Me-GGr"/>
+                    <connections>
+                        <outlet property="restFinished" destination="rVw-Ad-c3O" id="pXf-KA-82j"/>
+                        <outlet property="restResetButton" destination="aS6-cH-9Pw" id="rJx-ER-a7V"/>
+                        <outlet property="restRestartButton" destination="NLK-wZ-F6S" id="Oif-6x-wGQ"/>
+                        <outlet property="restStartButton" destination="gv8-2p-ylK" id="zRF-9B-HzB"/>
+                        <outlet property="restStopButton" destination="vOJ-Xo-aYL" id="jhL-vQ-alW"/>
+                        <outlet property="restTimeField" destination="xqO-dS-lUd" id="cr7-jk-Pxn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bcp-gy-cxh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="889.85507246376824" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="PomodoloTimer" width="187.5" height="406"/>
+        <image name="iPhone X-XS-11 Pro – 1" width="187.5" height="406"/>
+    </resources>
+</document>
