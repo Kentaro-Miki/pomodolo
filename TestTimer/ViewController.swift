@@ -64,7 +64,7 @@ class ViewController: UIViewController {
     
     @IBAction func resetTimer(_ sender: Any) {
         eggTimer.resetTimer()
-        updateDisplay(for: 5)
+        updateDisplay(for: 1500)
         resetButton.alpha = 0
         startButton.alpha = 1.0
         restartButton.alpha = 0

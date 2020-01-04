@@ -90,7 +90,7 @@ class RestViewController: UIViewController {
             controller.stopButton.alpha = 0
             controller.resetButton.alpha = 0
             controller.restartButton.alpha = 0
-            controller.updateDisplay(for: 5)
+            controller.updateDisplay(for: 1500)
         }
     }
     

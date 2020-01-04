@@ -12,7 +12,6 @@
 		422CEAAB23A8FC3D000F9F8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422CEAAA23A8FC3D000F9F8E /* ViewController.swift */; };
 		422CEAAE23A8FC3D000F9F8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 422CEAAC23A8FC3D000F9F8E /* Main.storyboard */; };
 		422CEAB023A8FC40000F9F8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 422CEAAF23A8FC40000F9F8E /* Assets.xcassets */; };
-		422CEAB323A8FC40000F9F8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 422CEAB123A8FC40000F9F8E /* LaunchScreen.storyboard */; };
 		422CEABE23A8FC40000F9F8E /* TestTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422CEABD23A8FC40000F9F8E /* TestTimerTests.swift */; };
 		422CEAC923A8FC40000F9F8E /* TestTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422CEAC823A8FC40000F9F8E /* TestTimerUITests.swift */; };
 		422CEAD923AB49C1000F9F8E /* EggTimerFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422CEAD823AB49C1000F9F8E /* EggTimerFile.swift */; };
@@ -44,7 +43,6 @@
 		422CEAAA23A8FC3D000F9F8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		422CEAAD23A8FC3D000F9F8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		422CEAAF23A8FC40000F9F8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		422CEAB223A8FC40000F9F8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		422CEAB423A8FC40000F9F8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		422CEAB923A8FC40000F9F8E /* TestTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		422CEABD23A8FC40000F9F8E /* TestTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTimerTests.swift; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 				422CEAAA23A8FC3D000F9F8E /* ViewController.swift */,
 				422CEAAC23A8FC3D000F9F8E /* Main.storyboard */,
 				422CEAAF23A8FC40000F9F8E /* Assets.xcassets */,
-				422CEAB123A8FC40000F9F8E /* LaunchScreen.storyboard */,
 				422CEAB423A8FC40000F9F8E /* Info.plist */,
 			);
 			path = TestTimer;
@@ -241,7 +238,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				422CEAB323A8FC40000F9F8E /* LaunchScreen.storyboard in Resources */,
 				422CEAB023A8FC40000F9F8E /* Assets.xcassets in Resources */,
 				422CEAAE23A8FC3D000F9F8E /* Main.storyboard in Resources */,
 			);
@@ -315,14 +311,6 @@
 				422CEAAD23A8FC3D000F9F8E /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		422CEAB123A8FC40000F9F8E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				422CEAB223A8FC40000F9F8E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
